@@ -22,6 +22,7 @@ public class HomeController {
 	
 	@GetMapping("/students")
 	public List<Student> getStudents() {
+		System.out.println("Getting all the Students.");
 		return stuService.getStudents();
 	}
 	
